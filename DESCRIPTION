@@ -1,0 +1,37 @@
+Package: zuexact
+Title: Exactly Rounded Sums, Means and Dot Products
+Version: 0.1.0
+Authors@R: c(
+    person("Pedro", "Baltazar", , "pedrobtz@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("Radford M.", "Neal", role = "cph",
+           comment = "Author of the vendored 'xsum' library")
+  )
+Description: Sums of double-precision numbers computed exactly and rounded
+    once, so the result is the correctly rounded true sum and does not depend
+    on the order of the elements, the platform, or whether R was built with
+    long doubles. Built on the small and large superaccumulators of Neal
+    (2015) <doi:10.48550/arXiv.1505.05571>. Provides exactly rounded sums,
+    means, cumulative sums, dot products and norms, row, column and grouped
+    sums, accumulators that can be built in pieces and merged across
+    processes, and a registered 'C' interface for other packages.
+License: MIT + file LICENSE
+URL: https://pedrobtz.github.io/zuexact/,
+        https://github.com/pedrobtz/zuexact
+BugReports: https://github.com/pedrobtz/zuexact/issues
+Depends: R (>= 4.1)
+Suggests: gmp, knitr, parallel, PreciseSums, rmarkdown, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Config/roxygen2/version: 8.1.0
+SystemRequirements: C99
+NeedsCompilation: yes
+Packaged: 2026-10-13 22:05:27 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph],
+  Radford M. Neal [cph] (Author of the vendored 'xsum' library)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-22 11:20:02 UTC
